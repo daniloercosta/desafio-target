@@ -41,3 +41,5 @@ Os testes são um executável sem pacotes externos. Uma falha encerra a execuç�
 - `Servicos`: regras de comissão, juros e controle de estoque, sem dependência do console ou dos arquivos.
 
 A separação segue responsabilidade única, mantendo as regras independentes da interface. Classes estáticas atendem aos cálculos sem estado; o controle de estoque mantém os produtos e o histórico da execução.
+
+Os testes estão separados por assunto em `ComissaoTests`, `JurosTests` e `ControleEstoqueTests`. O `Program.cs` do projeto de testes apenas executa os três grupos; `Verificacao` reúne as verificações e a contagem de resultados.
